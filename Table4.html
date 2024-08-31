@@ -3,87 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla 4</title>
+    <title>Table4</title>
     <style>
-        .grid-container {
-            display: grid;
-            gap: 5px;
-            margin-bottom: 20px;
+          table {
+            margin-bottom: 30px;
+            border: 1;
+            margin: 10px auto;
+            width: 10%;
+            
         }
-
-        .grid-4x2 {
-            grid-template-columns: repeat(4, auto);
-            grid-template-rows: repeat(2, auto);
-        }
-
-        .grid-2x3 {
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: repeat(3, auto);
-        }
-
-        .grid-3x2 {
-            grid-template-columns: repeat(3, auto);
-            grid-template-rows: repeat(2, auto);
-        }
-
-        .grid-2x2 {
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: repeat(2, auto);
-        }
-
-        .grid-item {
-            border: 1px solid black;
+        td {
             padding: 10px;
-            text-align: center;
-        }
-
-        /* Opcional: un poco de espacio entre los bloques de la tabla */
-        .section {
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="section">
-        <div class="grid-container grid-4x2">
-            <div class="grid-item">Item 1</div>
-            <div class="grid-item" style="grid-row: span 2;">Item 2</div>
-            <div class="grid-item">Item 3</div>
-            <div class="grid-item" style="grid-row: span 2;">Item 4</div>
-            <div class="grid-item">Item 5</div>
-            <div class="grid-item">Item 6</div>
-            <div class="grid-item">Item 7</div>
-        </div>
-    </div>
 
-    <div class="section">
-        <div class="grid-container grid-2x3">
-            <div class="grid-item">Item 1</div>
-            <div class="grid-item">Item 2</div>
-            <div class="grid-item" style="grid-column: span 2;">Item 3</div>
-            <div class="grid-item">Item 4</div>
-            <div class="grid-item">Item 5</div>
-        </div>
-    </div>
 
-    <div class="section">
-        <div class="grid-container grid-3x2">
-            <div class="grid-item" style="grid-row: span 2;">Item 1</div>
-            <div class="grid-item">Item 2</div>
-            <div class="grid-item">Item 3</div>
-            <div class="grid-item">Item 4</div>
-            <div class="grid-item">Item 5</div>
-        </div>
-    </div>
+    <table border="1" align="">
+        <tr>
 
-    <div class="section">
-        <div class="grid-container grid-2x2">
-            <div class="grid-item" style="grid-row: span 2;">Item 1</div>
-            <div class="grid-item">Item 2</div>
-            <div class="grid-item" style="grid-column: span 2;">Item 3</div>
-            <div class="grid-item">Item 4</div>
-            <div class="grid-item">Item 5</div>
-        </div>
-    </div>
+            <td rowspan="3">
+                    
+                Item1</td>
+
+            <td>Item2</td>
+            <td>Item3</td>
+            <td>Item4</td>
+        </tr>
+
+        <tr>
+            <td>Item5</td>
+            <td>Item6</td>
+            <td>Item7</td>
+        </tr>
+
+ 
+        <table border="1" align="">
+            <tr>
+                <td>Item1</td>
+                <td colspan="2">Item2</td>
+            </tr>
+            <tr>
+                <td>Item3</td>
+                <td>Item4</td>
+                <td>Item5</td>
+            </tr>
+        </table>
+
+
+        <table border="1" align="">
+            <tr>
+                <td>Item1</td>
+                <td rowspan="2">Item2</td><td>Item3</td>
+            </tr>
+            <tr>
+                <td>Item4</td>
+                <td>Item5</td>
+            </tr>
+        </table>
+
+     
+    <table border="1" align="">
+        <tr>
+            <td>Item1</td>
+            <td colspan="2">Item2</td>
+        </tr>
+        <tr>
+            <td>Item3</td>
+            <td>Item4</td>
+            <td>Item5</td>
+        </tr>
+    </table>
+
 </body>
 </html>
