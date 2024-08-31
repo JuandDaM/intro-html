@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla 5</title>
+    <title>Table 5</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        td {
+            text-align: center;
+            padding: 10px;
+            border: 2px solid #ccc;
+            width: 130px;
+            height: 180px;
+            vertical-align: bottom;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    </style>
 </head>
 <body>
-    
+
+    <table border="1">
+        <tr>
+            <td class="La Manzana">
+                <div class="img-container">
+                    <img src="images/manzana.png" alt="La Manzana">
+                </div>
+                <div>La Manzana</div>
+            </td>
+
+
+            <td class="el-melocoton">
+                <div class="img-container">
+                    <img src="images/melocoton.png" alt="El Melocotón">
+                </div>
+                <div>El Melocoton</div>
+            </td>
+
+            <td class="la-pera">
+                <div class="img-container">
+                    <img src="images/pera.png" alt="La pera">
+                </div>
+                <div>La Pera</div>
+            </td>
+        </tr>
+    </table>
+
+ 
+    <table border="1">
+        <tr>
+            <tr>
+                <td class="el-platano">
+                    <div class="img-container">
+                        <img src="images/platano.png" alt="El Plátano">
+                    </div>
+                    <div>El Platano</div>
+                </td>
+
+                <td class="la-naranja">
+                    <div class="img-container">
+                        <img src="images/naranja.png" alt="La Naranja">
+                    </div>
+                    <div>La Naranja</div>
+                </td>
+
+                <td class="el-limon">
+                    <div class="img-container">
+                        <img src="images/limon.png" alt="El Limón">
+                    </div>
+                    <div>El Limón</div>
+                </td>
+        </tr>
+    </table>
+
 </body>
 </html>
