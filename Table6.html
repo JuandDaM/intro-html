@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tabla 6 </title>
+    <title>Tabla 6</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <th colspan="2">A test table with merged cells</th>
+            <th rowspan="2">Red eyes</th>
+        </tr>
+        <tr>
+            <td>Average</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Males</td>
+            <td>height</td>
+            <td>1.9</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>weight</td>
+            <td>0.003</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">Females</td>
+            <td>height</td>
+            <td>1.7</td>
+            <td>43%</td>
+        </tr>
+        <tr>
+            <td>weight</td>
+            <td>0.002</td>
+            <td></td>
+        </tr>
+    </table>
 </body>
 </html>
